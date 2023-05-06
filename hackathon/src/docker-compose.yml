@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  pooler:
+    image: danimgomes/hackathon
+    volumes:
+        - /home/danimgomes/rides.db:/usr/app/instance/rides.db
+    ports:
+      - "80:8000"
+    env_file: .env
